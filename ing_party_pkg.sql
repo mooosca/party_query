@@ -105,7 +105,8 @@ CREATE OR REPLACE PACKAGE BODY ing_party_pkg AS
 
 END ing_party_pkg;
 /
-
+	
+-- Example
 SELECT
     *
   FROM
@@ -115,7 +116,7 @@ SELECT
                                           clo => '60001',
                                           cle => '75000',
                                           fons => '00000');
-
+-- Example
 SELECT
     *
   FROM
