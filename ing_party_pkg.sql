@@ -81,6 +81,7 @@ CREATE OR REPLACE PACKAGE BODY ing_party_pkg AS
           NVL(CON_INT, 0) AS CON_INT,
           NVL(CON_ANU, 0) AS CON_ANU,
           NVL(CON_INT, 0) - NVL(CON_ANU, 0) AS CON_LIQ,
+          NVL(OTRAS_DAT, 0) AS OTRAS_DAT,	  
           NVL(REC_INT, 0) AS REC_INT,
           NVL(REC_DEV, 0) AS REC_DEV,
           NVL(REC_INT, 0) - NVL(REC_DEV, 0) AS REC_LIQ,
@@ -96,6 +97,7 @@ CREATE OR REPLACE PACKAGE BODY ing_party_pkg AS
                                                              'PR_MOD' AS PR_MOD,
                                                              'CON_INT' AS CON_INT,
                                                              'CON_ANU' AS CON_ANU,
+                                                             'OTRAS_DAT' AS OTRAS_DAT,
                                                              'REC_INT' AS REC_INT,
                                                              'REC_DEV' AS REC_DEV)))
   }';
